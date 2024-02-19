@@ -376,6 +376,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
+  margin-bottom: 10px;
 }
 
 .advantages-item-image-1::before {
