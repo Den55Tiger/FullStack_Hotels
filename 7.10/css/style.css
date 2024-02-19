@@ -102,6 +102,7 @@ body {
 .header-button {
   margin-right: 40px;
 }
+
 .header-button:last-child {
   margin-right: 0;
 }
