@@ -166,6 +166,10 @@ body {
   width: 100%;
 }
 
+.services-title-h4 {
+  margin: 0;
+}
+
 .advantages-item {
   width: 23.5%;
   margin-right: 2%;
