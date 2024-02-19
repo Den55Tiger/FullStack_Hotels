@@ -80,6 +80,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .header-nav-element {
