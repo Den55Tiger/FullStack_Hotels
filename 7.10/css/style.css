@@ -112,15 +112,13 @@ body {
 }
 
 
-
-
-.special-offer-container{
+.special-offer-container {
   display: flex;
   align-items: stretch;
   gap: 23px;
 }
 
-.special-offer-row{
+.special-offer-row {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -192,7 +190,7 @@ body {
   margin: 0;
 }
 
-.advantages-items{
+.advantages-items {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
@@ -221,7 +219,7 @@ body {
 }
 
 
-.items-locations{
+.items-locations {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
