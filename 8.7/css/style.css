@@ -22,6 +22,18 @@ body {
   background-color: #f1f1f1;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
 /* index.html */
 .container {
   box-sizing: border-box;
@@ -66,6 +78,10 @@ body {
   margin-right: 40px;
 }
 
+.header-logo-image {
+  display: block;
+}
+
 .header-phone {
   margin-right: auto;
 
@@ -92,7 +108,7 @@ body {
 .button {
   box-sizing: border-box;
   min-height: 42px;
-  padding: 13px 20px;
+  padding: 12px 20px;
   border: 1px solid #CC9933;
 
   color: #CC9933;
@@ -110,7 +126,8 @@ body {
 .header-bottom {
   box-sizing: border-box;
   display: flex;
-  padding: 0 22.5px;
+  padding: 14px 45px;
+  min-height: 70px;
   background-color: #fff;
   border-radius: 15px;
 }
@@ -120,6 +137,7 @@ body {
   margin-right: auto;
   max-width: 700px;
   padding-right: 10px;
+
 }
 
 .header-nav-list {
@@ -132,7 +150,7 @@ body {
   justify-content: flex-start;
   list-style-type: none;
   flex-wrap: wrap;
-  /* gap: 10px 45px; */
+  gap: 10px 45px;
 }
 
 .header-nav-element {
@@ -144,9 +162,9 @@ body {
 
 .header-nav-element-link {
   box-sizing: border-box;
-  padding-right: 22.5px;
-  padding-left: 22.5px;
-  min-height: 70px;
+  /* padding-right: 22.5px;
+  padding-left: 22.5px; */
+  /* min-height: 70px; */
   display: flex;
   align-items: center;
 }
@@ -164,8 +182,6 @@ body {
   flex-wrap: wrap;
   max-width: calc(100% - 700px);
   gap: 10px 40px;
-  padding-right: 22.5px;
-  padding-left: 22.5px;
 }
 
 /* .header-button {
@@ -190,25 +206,6 @@ body {
   gap: 23px;
 }
 
-
-.special-offer-offers {
-  display: flex;
-  /* flex-direction: row; */
-  flex-wrap: wrap;
-  /* width: 100%; */
-  /* padding: 0;
-  margin: 0; */
-  /* align-content: flex-start; */
-  list-style-type: none;
-}
-
-.special-offer-offer {
-  box-sizing: border-box;
-  /* margin-bottom: 2%;
-  margin-right: 2%; */
-}
-
-
 .special-offer-offers {
   padding: 0;
   margin: 0;
@@ -219,17 +216,23 @@ body {
 }
 
 .special-offer-offer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   width: 573px;
   min-height: 258px;
-  padding: 40px 108px 40px 45px;
+  padding: 10px 45px 40px 45px;
   position: relative;
   grid-column: span 6;
   border-radius: 15px;
   list-style-type: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .special-offer-offer-big {
-  padding-top: 212px;
   grid-row: span 2
 }
 
@@ -252,6 +255,7 @@ body {
   position: absolute;
   display: block;
   min-height: 258px;
+  height: 100%;
   width: 573px;
   border-radius: 15px;
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
@@ -262,6 +266,7 @@ body {
   position: relative;
   z-index: 1;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   font-size: 40px;
   font-weight: 700;
@@ -277,10 +282,9 @@ body {
 }
 
 .special-offer-cost {
-  left: 45px;
-  bottom: 103px;
-  position: absolute;
+  position: relative;
   margin: 0;
+  margin-bottom: 47px;
   z-index: 1;
   font-size: 20px;
   font-weight: 400;
@@ -295,13 +299,10 @@ body {
 }
 
 .special-offer-more {
-  bottom: 40px;
-  left: 45px;
-  position: absolute;
+
   z-index: 1;
   font-size: 16px;
   font-weight: 400;
-  line-height: 16px;
   text-align: left;
   color: #F0BF5F;
 }
@@ -373,7 +374,7 @@ body {
   padding: 26px 126px 35px 45px;
 }
 
-.services-title-h4 {
+.services-title-header {
   margin: 0;
   font-size: 20px;
   font-weight: 500;
@@ -381,7 +382,7 @@ body {
   color: #C93;
 }
 
-.services-title-h4::after {
+.services-title-header::after {
   top: 4px;
   left: 5px;
   position: relative;
@@ -496,6 +497,7 @@ body {
 }
 
 .locations-image {
+  display: block;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -550,6 +552,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  border-radius: 15px;
   background-image: url('../img/razm_more.jpg');
   background-repeat: no-repeat;
   background-position: center;
