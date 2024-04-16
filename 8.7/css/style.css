@@ -232,10 +232,6 @@ body {
   background-size: cover;
 }
 
-.special-offer-offer-big {
-  grid-row: span 2
-}
-
 .special-offer-offers-first {
   background-image: url('../img/sp_1.jpg');
 }
